@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Doc App',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(primaryColor: AppColors.mainBlue, scaffoldBackgroundColor: Colors.white),
+        theme: ThemeData(
+          primaryColor: AppColors.primary,
+          scaffoldBackgroundColor: Colors.white,
+        ),
         initialRoute: Routes.onboardingScreen,
         onGenerateRoute: AppRouter.generateRoute,
       ),
